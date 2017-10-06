@@ -1,14 +1,14 @@
-import java.io._
-class vasanth_testing {
-  def hi(str: String){
-    println ("Hi Vasanth")
+class student{
+  println("Hi")
+  var company:String = "Corecompete"
+  def employee()={
+    println("Hi")
   }
 }
 
-
-object demo{
+object hello{
   def main(args:Array[String]){
-    var a = new vasanth_testing
-    a.hi("Vasanth")
+    var s = new student
+    s.employee()
   }
 }
