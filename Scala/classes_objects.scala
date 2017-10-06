@@ -1,7 +1,6 @@
 class student{
-  println("Hi")
   var company:String = "Corecompete"
-  def employee()={
+  def employee(string:String)={
     println("Hi")
   }
 }
