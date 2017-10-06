@@ -8,7 +8,7 @@ class vasanth_testing {
 
 object demo{
   def main(args:Array[String]){
-    var a = new vasanth_testing()
+    var a = new vasanth_testing
     a.hi("Vasanth")
   }
 }
