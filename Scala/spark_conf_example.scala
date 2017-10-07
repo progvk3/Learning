@@ -1,3 +1,6 @@
+import org.apache.spark.SparkContext
+import org.apache.spark.SparkConf
+
 val conf = new SparkConf().setAppName("vasanth_learning").setMaster("yarn-client")
 val sc = SparkContext(conf)
 
