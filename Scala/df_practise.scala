@@ -28,8 +28,12 @@ import spark.implicits._
 df_t2.filter($"Close" > 480).show()
 
 //OR
-df_t2.filter("Close > 480").show()
+//df_t2.filter("Close > 480").show()
 
 df_t2.filter($"Close" > 480).count()
 
 df_t2.filter($"Close" < 480 && $"High" < 480).show()
+//OR
+//df_t2.filter("Close < 480 AND High < 480").show()
+
+val ch_low = df_t2.filter($"Close" < 480 && $"High" < 480).collect()
