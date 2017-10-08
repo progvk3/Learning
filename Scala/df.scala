@@ -14,3 +14,5 @@ for(row <- df.head(5)){
 df.columns
 
 df.describe().show()
+
+df.withColumn("HighPlusLow",df("High")+df("Low"))
