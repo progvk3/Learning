@@ -24,6 +24,7 @@ df_t2.show()
 
 df_t2.select(df_t2("HighPlusLow").as("HPL"),df_t2("Date")).show()
 
-df_t2.filter("Close" > 480 ).show()
+import spark.implicits._
+df_t2.filter($"Close" > 480).show()
 
-df_t2.filter("Close" > 480).count()
+df_t2.filter($"Close" > 480).count()
