@@ -10,3 +10,5 @@ val df = spark.read.option("header",true).option("inferSchema",true).csv("file:/
 for(row <- df.head(5)){
   println(row)
 }
+
+df.columns
