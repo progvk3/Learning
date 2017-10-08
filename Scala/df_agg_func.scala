@@ -27,3 +27,5 @@ df.select(sumDistinct("Sales")).show()
 df.select(variance("Sales")).show()
 df.select(stddev("Sales")).show() //avg,max,min,sum,stddev
 df.select(collect_set("Sales")).show()
+
+df.groupBy("Company").mean("Sales").show()
