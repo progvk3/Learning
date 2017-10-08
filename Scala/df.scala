@@ -12,3 +12,5 @@ for(row <- df.head(5)){
 }
 
 df.columns
+
+df.describe().show()
