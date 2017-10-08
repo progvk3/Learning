@@ -44,4 +44,4 @@ df.filter($"High"===484.40).show()
 //Pearsoncorrelation
 df_t2.select(corr("High","Low")).show()
 
-df_t2.groupBy("Date").mean("High").as("M_High").show()
+df_t2.groupBy("Date").mean("High").show()
