@@ -7,3 +7,11 @@ val df = spark.read.option("header",true).option("inferSchema",true).csv("file:/
 df.printSchema()
 
 df.show()
+
+df.na.drop.show()
+
+df.na.fill(100).show()
+
+df.na.fill("Missing").show()
+df.na.fill("New Name",Array("Name")).show()
+df.na.fill("Missing").na.fill(100).show()
