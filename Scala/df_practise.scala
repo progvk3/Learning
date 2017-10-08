@@ -23,3 +23,7 @@ val df_t2 = df_t.withColumn("HighPlusLow",df_t("High")+df_t("Low"))
 df_t2.show()
 
 df_t2.select(df_t2("HighPlusLow").as("HPL"),df_t2("Date")).show()
+
+df_t2.filter("Close" > 480 ).show()
+
+df_t2.filter("Close" > 480).count()
