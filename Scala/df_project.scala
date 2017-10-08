@@ -28,4 +28,6 @@ df.filter("High = 716.159996").show()
 
 df.filter("Close < 600").select(countDistinct("Date")).show()
 
-df.select(corr("High","Volume"))
+df.select(corr("High","Volume")).show()
+
+df.withColumn("Year",year("Date")).groupBy("Year").max("High").show()
