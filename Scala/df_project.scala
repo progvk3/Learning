@@ -31,3 +31,5 @@ df.filter("Close < 600").select(countDistinct("Date")).show()
 df.select(corr("High","Volume")).show()
 
 df.withColumn("Year",year(df("Date"))).groupBy("Year").max("High").show()
+
+df.withColumn("Month",month(df("Date"))).groupBy("Month").mean("Close").show()
