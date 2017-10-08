@@ -18,3 +18,12 @@ df.groupBy("Company").min().show()
 df.groupBy("Company").sum().show()
 
 df.groupBy("Company","Person").sum().show()
+
+df.select(sum("Sales")).show()
+
+
+df.select(countDistinct("Sales")).show() //approxCountDistinct
+df.select(sumDistinct("Sales")).show()
+df.select(variance("Sales")).show()
+df.select(stddev("Sales")).show() //avg,max,min,sum,stddev
+df.select(collect_set("Sales")).show()
