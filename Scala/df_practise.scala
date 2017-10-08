@@ -40,3 +40,6 @@ val ch_low = df_t2.filter($"Close" < 480 && $"High" < 480).collect()
 
 //Equals
 df.filter($"High"===484.40).show()
+
+//Pearsoncorrelation
+df_t2.select(corr("High","Low")).show()
