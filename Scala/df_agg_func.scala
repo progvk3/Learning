@@ -9,3 +9,12 @@ df.printSchema()
 
 
 df.groupBy("Company").mean().show()
+
+
+df.groupBy("Company").count().show()
+
+df.groupBy("Company").min().show()
+
+df.groupBy("Company").sum().show()
+
+df.groupBy("Company","Person").sum().show()
