@@ -22,4 +22,4 @@ val df_t2 = df_t.withColumn("HighPlusLow",df_t("High")+df_t("Low"))
 
 df_t2.show()
 
-df_t2.select(df2("HighPlusLow").as("HPL"),df2("Date")).show()
+df_t2.select(df_t2("HighPlusLow").as("HPL"),df_t2("Date")).show()
