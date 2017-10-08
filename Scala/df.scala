@@ -7,6 +7,6 @@ val df = spark.read.option("header",true).csv("file:///home/vasanth/Learning/Sca
 df.head(6)
 
 
-for(line <- df.head(5)){
+for(row <- df.head(5)){
   println(row)
 }
