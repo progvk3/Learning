@@ -14,7 +14,7 @@ df.head(5)
 
 df.describe().show()
 
-df.withColumn("HV Ratio",df("High")/df("low")).show()
+//df.withColumn("HV Ratio",df("High")/df("low")).show()
 
 //df.filter($"Date" === df.select(max("High"))).show()
 
