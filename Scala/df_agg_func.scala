@@ -6,3 +6,6 @@ val df = spark.read.option("header",true).option("inferSchema",true).csv("file:/
 
 
 df.printSchema()
+
+
+df.groupBy("Company")
