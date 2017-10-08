@@ -37,3 +37,6 @@ df_t2.filter($"Close" < 480 && $"High" < 480).show()
 //df_t2.filter("Close < 480 AND High < 480").show()
 
 val ch_low = df_t2.filter($"Close" < 480 && $"High" < 480).collect()
+
+//Equals
+df.filter($"High"===484.40).show()
