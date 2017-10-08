@@ -15,4 +15,4 @@ df.columns
 
 df.describe().show()
 
-df.withColumn("HighPlusLow",df("High")+df("Low"))
+val df2 = df.withColumn("HighPlusLow",df("High")+df("Low"))
