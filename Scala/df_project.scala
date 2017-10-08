@@ -11,6 +11,6 @@ df.printSchema()
 
 df.head(5)
 
-df.describe()
+df.describe().show()
 
-//df.withColumn("HV Ratio",)
+df.withColumn("HV Ratio",df("High")/df("low"))
