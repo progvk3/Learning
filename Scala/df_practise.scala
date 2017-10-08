@@ -10,3 +10,16 @@ df_t.head(5)
 df_t.printSchema()
 
 df_t.select("Date").show()
+
+df_t
+
+
+for(n <- df_t.head(5)){
+  println(n)
+}
+
+val df_t2 = df_t.withColumn("HighPlusLow",df_t("High")+df_t("Low"))
+
+df_t2.show()
+
+df_t2.select(df2("HighPlusLow").as("HPL"),"Date").show()
