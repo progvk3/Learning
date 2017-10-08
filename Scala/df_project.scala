@@ -15,4 +15,12 @@ df.describe().show()
 
 df.withColumn("HV Ratio",df("High")/df("low")).show()
 
-df.filter($"Date" === df.select(max("High"))).show()
+//df.filter($"Date" === df.select(max("High"))).show()
+
+df.select(max("High")).show()
+
+
+df.filter($"Date" === 716.159996).show()
+
+
+df.filter("Close < 600").select(countDistinct("Days")).collect()
